@@ -21,5 +21,5 @@ cd imdb-api-automation
 ```
 **3.Run **
 ```bash
-mvn clean test
+Run test.xml
 ```
