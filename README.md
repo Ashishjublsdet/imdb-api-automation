@@ -4,7 +4,7 @@
 ```bash
 https://imdb-api.com/api 
 ```
-##API Documentation for IMDB 
+## API Documentation for IMDB 
 ```bash
 https://imdb-api.com/swagger/index.html
 ```
