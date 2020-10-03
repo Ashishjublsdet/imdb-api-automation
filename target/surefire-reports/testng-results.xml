@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="test.BaseTest" duration-ms="2" started-at="2020-10-03T15:12:32Z" finished-at="2020-10-03T15:12:32Z">
+  <suite name="test.BaseTest" duration-ms="1" started-at="2020-10-03T15:25:35Z" finished-at="2020-10-03T15:25:35Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="2" started-at="2020-10-03T15:12:32Z" finished-at="2020-10-03T15:12:32Z">
+    <test name="Command line test" duration-ms="1" started-at="2020-10-03T15:25:35Z" finished-at="2020-10-03T15:25:35Z">
       <class name="test.BaseTest">
-        <test-method status="PASS" signature="initSetup()[pri:0, instance:test.BaseTest@73f792cf]" name="initSetup" is-config="true" duration-ms="303" started-at="2020-10-03T20:42:32Z" finished-at="2020-10-03T20:42:32Z">
+        <test-method status="PASS" signature="initSetup()[pri:0, instance:test.BaseTest@73f792cf]" name="initSetup" is-config="true" duration-ms="279" started-at="2020-10-03T20:55:34Z" finished-at="2020-10-03T20:55:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initSetup -->
