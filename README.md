@@ -1,6 +1,6 @@
 # imdb-api-automation
 
-##Create Api key
+## Create Api key
 ```bash
 https://imdb-api.com/api 
 ```
