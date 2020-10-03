@@ -1,0 +1,4 @@
+test/ImdbRating.class
+pages/imdbSearch.class
+test/BaseTest.class
+pages/BasePage.class

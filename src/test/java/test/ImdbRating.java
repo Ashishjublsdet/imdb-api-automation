@@ -19,14 +19,21 @@ public class ImdbRating extends BaseTest {
     public void GET_HIGHEST_RATING() throws Exception {
         String movieSearch = "lord of the rings";
         Map<String, Float> storeMovieRating = new HashMap<>();
+
+        //Get all movie Reponse from api
         Response response = apiClient.getRequest(API_KEY, movieSearch, Constant.SEARCH_MOVIE);
         List<Map<String, String>> movieLists = response.jsonPath().getList("results");
+
+        //Get all the  movie imdb rating from previous response
         for (int i = 0; i < movieLists.size(); i++) {
             Response response1 = apiClient.getRequest(Constant.MOVIE_RATINGS + "/" + API_KEY + "/" + movieLists.get(i).get("id"));
             if (!response1.jsonPath().getString("imDb").isEmpty())
                 storeMovieRating.put(response1.jsonPath().getString("fullTitle"), Float.parseFloat(response1.jsonPath().getString("imDb")));
         }
+
+        //Get top 3 movie on basis of ratings
         List<Map.Entry<String, Float>> sortedMap = Utility.getSortedMap(storeMovieRating);
+
         WebDriver webDriver = DriverClient.getDriver();
         webDriver.manage().window().maximize();
         imdbSearch imdbSearch = new imdbSearch(webDriver);

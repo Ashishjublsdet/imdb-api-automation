@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="test.BaseTest" duration-ms="2" started-at="2020-10-03T15:12:32Z" finished-at="2020-10-03T15:12:32Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="2" started-at="2020-10-03T15:12:32Z" finished-at="2020-10-03T15:12:32Z">
+      <class name="test.BaseTest">
+        <test-method status="PASS" signature="initSetup()[pri:0, instance:test.BaseTest@73f792cf]" name="initSetup" is-config="true" duration-ms="303" started-at="2020-10-03T20:42:32Z" finished-at="2020-10-03T20:42:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+      </class> <!-- test.BaseTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- test.BaseTest -->
+</testng-results>
