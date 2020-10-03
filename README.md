@@ -1,9 +1,13 @@
 # imdb-api-automation
 
-##Create Api key from **https://imdb-api.com/api**
+##Create Api key
+```bash
+https://imdb-api.com/api 
+```
 ##API Documentation for IMDB 
-**https://imdb-api.com/swagger/index.html** 
-
+```bash
+https://imdb-api.com/swagger/index.html
+```
 
 ## Steps to Setup
 
