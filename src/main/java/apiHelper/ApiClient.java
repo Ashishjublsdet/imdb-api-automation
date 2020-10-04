@@ -1,6 +1,7 @@
 package apiHelper;
 
 
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.CodeLanguage;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import customReporter.ExtentManager;
@@ -18,6 +19,7 @@ public class ApiClient {
     }
 
     public Response getRequest(String params) {
+        ExtentManager.getTest().get().createNode(params).log(Status.INFO, params);
         Response response = given().relaxedHTTPSValidation().log().all()
                 .with()
                 .contentType(ContentType.JSON)
@@ -28,6 +30,7 @@ public class ApiClient {
     }
 
     public Response getRequest(String apiKey, String movie, String params) {
+        ExtentManager.getTest().get().createNode(params + apiKey + movie).log(Status.INFO, params);
         Response response = given().relaxedHTTPSValidation().log().all()
                 .with()
                 .pathParam("apiKey", apiKey)

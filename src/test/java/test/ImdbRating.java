@@ -11,7 +11,6 @@ import pages.imdbSearch;
 import utils.Utility;
 
 import java.util.*;
-import java.util.stream.Stream;
 
 public class ImdbRating extends BaseTest {
 
@@ -20,7 +19,7 @@ public class ImdbRating extends BaseTest {
         String movieSearch = "lord of the rings";
         Map<String, Float> storeMovieRating = new HashMap<>();
 
-        //Get all movie Reponse from api
+        //Get all movie Response from api
         Response response = apiClient.getRequest(API_KEY, movieSearch, Constant.SEARCH_MOVIE);
         List<Map<String, String>> movieLists = response.jsonPath().getList("results");
 
@@ -40,12 +39,13 @@ public class ImdbRating extends BaseTest {
         webDriver.get("https://www.imdb.com/");
         imdbSearch.searchMovie(movieSearch);
         imdbSearch.clickCategories("Movie");
-        ExtentManager.getTest().get().info("Top 3 imdb Rating :: " + sortedMap);
+        ExtentManager.logPass(sortedMap.toString(), "Top 3 imdb Rating :: ");
         boolean flag = true;
         List<String> movieList = imdbSearch.getMovieList();
-        ExtentManager.getTest().get().info("Movie List in Web :: " + movieList);
+        ExtentManager.logPass(movieList.toString(), "Movie List in Web :: ");
         for (int i = 0; i < sortedMap.size(); i++) {
-            if (!movieList.get(i).contains(sortedMap.get(i).getKey())) {
+            if (!movieList.contains(sortedMap.get(i).getKey())) {
+                ExtentManager.logPass(sortedMap.get(i).getKey(), "Movie not present in web  :: ");
                 flag = false;
                 break;
             }

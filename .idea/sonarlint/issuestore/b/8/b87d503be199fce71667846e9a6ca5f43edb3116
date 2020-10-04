@@ -1,4 +1,12 @@
 
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®Ç¶„8ÁÖ¢äÎ.
-d
-java:S2094"BRemove this empty class, write its code or make it an "interface".(¯ŸÁŒÿÿÿÿÿ8ÁÖ¢äÎ.
+\
+java:S1118	":Add a private constructor to hide the implicit public one.(¯ŸÁŒÿÿÿÿÿ8€¾ÜäÎ.
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ñ°şŠ8®¸ÍèÎ.
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŞÈøŸ8®¸ÍèÎ.
+7
+java:S5164"Call "remove()" on "test".(Û³û8ú¹ÎèÎ.
+L
+java:S3740"/Provide the parametrized type for this generic.(Û³û8ú¹ÎèÎ.

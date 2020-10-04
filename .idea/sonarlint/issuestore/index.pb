@@ -15,3 +15,13 @@ R
 .src/main/java/customListner/ReportListner.java,9/e/9eb1469fa48cb77a5fdee37f0c62c016e579948c
 _
 /src/main/java/customReporter/ExtentManager.java,b/8/b87d503be199fce71667846e9a6ca5f43edb3116
+Q
+!src/test/java/pages/BasePage.java,b/a/bad33c200b069c9a74de9dfe76f946ebd1f102bf
+]
+-src/main/java/DriverManager/DriverClient.java,a/5/a52e84398f4c6496ab2b8c3bd244de4d65e86545
+S
+#src/test/java/pages/imdbSearch.java,c/3/c3c955a5cb21e1a30074b1d3306613e2616cfff0
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+8
+test.xml,1/3/133b8a15f0efac6ddd9a373516c634f1fb2919a7

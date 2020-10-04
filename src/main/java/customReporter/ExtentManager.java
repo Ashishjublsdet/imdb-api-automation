@@ -2,6 +2,8 @@ package customReporter;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import java.io.File;
@@ -33,5 +35,10 @@ public class ExtentManager {
         extentReports = new ExtentReports();
         extentReports.attachReporter(extentSparkReporter);
         return extentReports;
+    }
+
+    public static void logPass(String log,String data){
+        ExtentManager.getTest().get().createNode(MarkupHelper.createLabel(data, ExtentColor.CYAN).getMarkup())
+                .info(log);
     }
 }
